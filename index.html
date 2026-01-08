@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags for character set and viewport settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width , initial-scale=1.0">
+  <title>Dynamic Portfolio</title>
+  <!-- Link to external CSS stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+   <nav>
+    <!-- Navigation links to different sections of the portfolio -->
+    <a href="#profile">Profile</a>
+    <a href="#academic">Academic Background</a>
+    <a href="#cv">CV Viewer</a>
+      <a href="#projects">Projects</a>
+    <a href="#Gallery">Gallery</a>
+    <a href="#Video">Video</a>
+    <a href="#contact">Contact</a>
+  </nav><br><br><br><br><br>
+  <header>
+    <!-- Main header of the portfolio -->
+    <h1>Dynamic Portfolio</h1>
+  </header>
+  
+
+
+  <!-- Ticker section for announcements -->
+  <section id="ticker" >
+    <marquee behavior="scroll" direction="left" scrollamount="5"><br><br>
+      Welcome to my Dynamic Portfolio! Stay tuned for updates and new projects. 🚀
+    </marquee>
+  </section>
+
+  <section id="profile" class="profile"><br><br><br>
+    <div class="container">
+      <!-- Personal profile section -->
+      <h2 style="margin-top: 0px;">Personal Profile</h2>
+      </section>
+     
+<div style="display: flex;">
+        <div style=" width: 50%; margin-top: -30px; font-size: 30px; margin-left: 100px;">MUHAMMAD ROHAN ALI <BR>05292()14
+           <br>SOFTWARE ENGINEERING STUDENT <br>UET ABBOTTABAD</BR></div>
+       <div  id="img1" style=" margin-right: 200px;"></div>
+</div>
+    </div>
+  
+
+  <section id="academic" class="container" style=" margin-bottom: 200px;"><br><br><br>
+    <h2>Academic Background</h2>
+    <table id="academicTable" style="margin-top: 150px;">
+      <thead>
+        <tr>
+          <th onclick="sortTable(0)">Degree</th>
+          <th onclick="sortTable(1)">Institution</th>
+          <th onclick="sortTable(2)">Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>SECONDARY SCHOOL (SSC)</td>
+          <td>LEEDS SCHOOL AND COLLEGE</td>
+          <td>2022</td>
+        </tr>
+        <tr>
+          <td>HIGHER SECONDARY SCHOOL (HSSC)</td>
+          <td>QURTUBA PUBLIC SCHOOL & COLLEGE</td>
+          <td>2024</td>
+        </tr>
+        <tr>
+          <td>SOFTWARE ENGINEERING</td>
+          <td>UET Peshawar ABBOTTABAD CAMPUS</td>
+          <td>2025-ONWARDS</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section id="cv" class="container" ><br><br>
+    <h2 style=" margin-top: 90px;">Interactive CV Viewer</h2>
+    <button id="cvToggleButton" style=" display: block;">Display CV</button><br>
+    <button id="cvToggleButton" onclick="window.open('CV.pdf', '_blank')">Open CV in New Tab</button>
+    <div id="cvContainer" class="hidden">
+      <iframe src="CV.pdf" width="100%" height="500px"></iframe>
+    </div>
+  </section>
+ <div id="projects" ></div> 
+       <h2  style="margin-top: 100px;">Projects </h2>
+   <div class="projects">
+   <div class="sprojects">Hospital Appointment<br>System</div>
+   <div class="sprojects">Food Panda</div>
+   <div class="sprojects">Dynamic Portfolio</div>
+   <div class="sprojects">Electricity bill<br>calculation</div>
+    <div class="sprojects">Smart home devices</div>
+     <div class="sprojects">Online Attendence<br>System</div>
+      <div class="sprojects">Student Grade<br> calculation</div>
+   </div>
+
+  <section style="text-align: center;" id="Gallery"><br><br>
+    <h2 style="margin-top: 120px;">Gallery</h2>
+    <div id="galleryContainer" class="gallery">
+      <!-- Gallery images -->
+      <figure style="display: inline-block;margin: 22px;">
+        <img src="img 1.jpg" alt="Image 1">
+        <figcaption>AZAD JAMMU KASHMIR</figcaption>
+      </figure>
+      <figure style="display: inline-block;margin: 22px;">
+        <img src="img 2.jpg" alt="Image 2">
+        <figcaption>DERA ISMAIL KHAN</figcaption>
+      </figure>
+      <figure style="display: inline-block;margin: 22px;">
+        <img src="img 3.jpg" alt="Image 3">
+        <figcaption>ISLAMABAD</figcaption>
+      </figure>
+      <figure style="display: inline-block;margin: 22px;">
+        <img src="img 4.jpg" alt="Image 4">
+        <figcaption>ABBOTTABAD</figcaption>
+      </figure>  
+      <figure style="display: inline-block;margin: 22px;">
+        <img src="img 5.jpg" alt="Image 1">
+        <figcaption>AZAD JAMMU KASHMIR</figcaption>
+      </figure>
+      <figure style="display: inline-block;margin: 22px;">
+        <img src="img 6.jpg" alt="Image 2">
+        <figcaption>DERA ISMAIL KHAN</figcaption>
+      </figure>
+      <figure style="display: inline-block;margin: 22px;">
+        <img src="img 7.jpg" alt="Image 3">
+        <figcaption>ISLAMABAD</figcaption>
+      </figure>
+      <figure style="display: inline-block;margin: 22px;">
+        <img src="img 8.jpg" alt="Image 4">
+        <figcaption>ABBOTTABAD</figcaption>
+      </figure>  
+    </div>
+  </section>
+
+  <section style="text-align: center;" id="Video"><br><br>
+    <h2>Video</h2>
+    <div id="VideoContainer" class="mpv">
+      <figure>
+        <video controls>
+          <source src="video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>This is a demo video showcasing my skills.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="contact" class="container"><br><br>
+    <div class="contact-form-container">
+      <h2>Contact Me</h2>
+      <form id="contactForm" target="_blank" action="https://formsubmit.co/643433926a11d558510a43e663e105ad" method="POST">
+        <div class="form-group">
+          <div class="form-row">
+            <div class="col">
+              <label for="name">Name:</label><br>        
+              <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="col">
+              <label for="email">Email:</label><br>         
+              <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label><br>   
+          <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="theme-switcher">
+    <button id="themeButton">Switch to Dark Mode</button>
+  </div>
+
+  <div id="progressTracker"></div>
+
+  <script src="script.js"></script>
+
+  <!-- Footer Section -->
+  <footer>
+    <center>
+      <small>This Portfolio is made of Muhammad Rohan Ali&copy; || 2026, All Rights Reserved || This Website is Designed By Awan Developers&trade;</small>
+    </center>
+    <!-- Social Media Buttons -->
+    <div class="social-media-buttons">
+      <a href="https://www.instagram.com/rohandangerous/profilecard/?igsh=MmZ6MDNiaHhoYmt1" target="_blank" class="social-button instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/muhammadrohanali=ZbWKwL" target="_blank" class="social-button facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="http://www.linkedin.com/in/muhammad-rohan-ali-4b1580336" target="_blank" class="social-button linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </footer>
+</body>
+
+</html>
